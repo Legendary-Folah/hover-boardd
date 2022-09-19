@@ -1,5 +1,6 @@
 const container = document.getElementById('cont');
-const colors = ["#056CF2", "#05SFF2", "#F2E205", "#F28705", "#A62103"];
+const colors = ["#faebd7", "#AFEEEE", "	#00ffff", "#F28705", "#A62103"];
+const BOX = 500;
 
 //Random selection of color from the array above
 const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
@@ -13,4 +14,12 @@ const setColor = (box) => {
 const removeColor = (box) => {
     box.style.background = "#1d1d11";
     box.style.boxShadow = "0 0 2px #000";
+}
+
+for (let i = 0; i < BOX; i++) {
+    const box = document.createElement("div");
+    box.classList.add("box");
+    box.addEventListener("mouseover", () => setColor(box));
+    box.addEventListener("mouseout", () => removeColor(box));
+    container.appendChild(box);
 }
