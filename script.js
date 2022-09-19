@@ -1,5 +1,5 @@
 const container = document.getElementById('cont');
-const colors = ["#faebd7", "#AFEEEE", "	#00ffff", "	#f0f8ff", "#A62103"];
+const colors = ["#faebd7", "#AFEEEE", "	#00ffff", "	#f0f8ff", "#F0FFFF"];
 const BOX = 500;
 
 //Random selection of color from the array above
