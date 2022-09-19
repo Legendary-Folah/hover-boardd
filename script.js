@@ -13,7 +13,7 @@ const setColor = (box) => {
 
 const removeColor = (box) => {
     box.style.background = "#1d1d11";
-    box.style.boxShadow = "0 0 2px #000";
+    box.style.boxShadow = "0 0 4px #000";
 }
 
 for (let i = 0; i < BOX; i++) {
